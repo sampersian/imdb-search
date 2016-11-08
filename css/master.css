@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+  margin-top: 50px;
+}
+
+.mainHeader {
+
+}
+
+.mainSubheader {
+  margin-bottom: 0px;
+}
+
+/*search form*/
+
+.movieSearchForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieSearchTerm {
+  margin: 10px auto;
+}
+
+.movieSearchButton {
+  padding: 5px 10px;
+  border: 0px;
+  border-radius: 2px;
+  background-color: #2C90D6;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/*search results*/
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E08977;
+  border-radius: 25px;
+  color: white;
+  margin: 30px;
+  padding : 10px 20px;
+}

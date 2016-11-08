@@ -1,0 +1,15 @@
+<main>
+  <h1 class="mainHeader">{{ view.mainHeader }}</h1>
+  <h4 class="mainSubheader">Enter a movie by title.</h4>
+  <form class="movieSearchForm" ng-submit="view.search()" method="post">
+    <input type="text" class="movieSearchTerm" value="" ng-model="view.searchTerm" placeholder="movie title e.g. 'Die Hard'" required>
+    <input type="submit" class="movieSearchButton" value="Search! &rarr;">
+  </form>
+  <div class="searchResults" ng-if="view.movie">
+    <h1>Results</h1>
+    <h2>Title: <a ng-href="./#/{{view.movie.imdbID}}">{{ view.movie.Title }} ({{ view.movie.Year }})</a></h2>
+    <h2>Actors: {{ view.movie.Actors | limitTo:30}}...</h2>
+    <img ng-src="{{ view.movie.Poster }}" alt="movie poster" />
+  </div>
+
+</main>
